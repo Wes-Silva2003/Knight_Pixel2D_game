@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://b7nd3hydpjnqj"]
+
+[ext_resource type="Texture2D" uid="uid://8xos2oefx1u5" path="res://Sprites/Lifes and Coins/collectable sprite-sheet.png" id="1_6g24d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0t2x8"]
+atlas = ExtResource("1_6g24d")
+region = Rect2(0, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdfm8"]
+atlas = ExtResource("1_6g24d")
+region = Rect2(16, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq4j8"]
+atlas = ExtResource("1_6g24d")
+region = Rect2(32, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0od2c"]
+atlas = ExtResource("1_6g24d")
+region = Rect2(48, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1woow"]
+atlas = ExtResource("1_6g24d")
+region = Rect2(64, 256, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gyq4t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0t2x8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdfm8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pq4j8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0od2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1woow")
+}],
+"loop": true,
+"name": &"Coin_bronze",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p4ab3"]
+radius = 17.029387
+
+[node name="Coin_bronze" type="Node2D" unique_id=567502697]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1404046799]
+scale = Vector2(1.2, 1.2)
+sprite_frames = SubResource("SpriteFrames_gyq4t")
+animation = &"Coin_bronze"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1351068281]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=561158097]
+shape = SubResource("CircleShape2D_p4ab3")
+debug_color = Color(0.97901946, 0, 0.3953009, 0.41960785)
