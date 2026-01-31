@@ -8,28 +8,22 @@ Este é um jogo de plataforma 2D com estética Pixel Art, desenvolvido como o pr
 
 ## **Funcionalidades Principais**
 
-* 
-**Jogabilidade:** Dois níveis completos com aproximadamente 3 minutos de gameplay total.
+* **Jogabilidade:** Dois níveis completos com aproximadamente 3 minutos de gameplay total.
 
 
-* 
-**Desafio:** Sistema de morte instantânea ao sofrer dano.
+* **Desafio:** Sistema de morte instantânea ao sofrer dano.
 
 
-* 
-**Inimigos:** Três tipos diferentes de inimigos, cada um possuindo uma habilidade única.
+* **Inimigos:** Três tipos diferentes de inimigos, cada um possuindo uma habilidade única.
 
 
-* 
-**Sistema de Itens:** Coletáveis (Moedas e Vidas Extras) implementados através de *Resources* no Godot.
+* **Sistema de Itens:** Coletáveis (Moedas e Vidas Extras) implementados através de *Resources* no Godot.
 
 
-* 
-**Progressão:** Sistema de pontuação que contabiliza moedas e vidas extras.
+* **Progressão:** Sistema de pontuação que contabiliza moedas e vidas extras.
 
 
-* 
-**Combate:** Derrotar inimigos concede 5 pontos ao jogador.
+* **Combate:** Derrotar inimigos concede 5 pontos ao jogador.
 
 
 
@@ -39,16 +33,14 @@ Este é um jogo de plataforma 2D com estética Pixel Art, desenvolvido como o pr
 
 ### **Menus e Interface**
 
-* 
-**Menu Principal:** Opções para iniciar um "Novo Jogo", "Continuar" do último salvamento ou "Sair".
+* **Menu Principal:** Opções para iniciar um "Novo Jogo", "Continuar" do último salvamento ou "Sair".
 
 
 * 
 **Menu In-Game (Pausa):** Funções para Retomar, Reiniciar, Salvar, Carregar e Sair.
 
 
-* 
-**Game Over/Vitória:** Menu final exibindo a pontuação total com opções de reiniciar o nível ou fechar o jogo.
+* **Game Over/Vitória:** Menu final exibindo a pontuação total com opções de reiniciar o nível ou fechar o jogo.
 
 
 
@@ -65,21 +57,16 @@ Este é um jogo de plataforma 2D com estética Pixel Art, desenvolvido como o pr
 
 ## **Desenvolvimento e Padrões**
 
-* 
-**Motor Gráfico:** Godot Engine.
+* **Motor Gráfico:** Godot Engine.
 
 
-* 
-**Estilo de Código:** Segue estritamente o guia de estilo oficial do GDScript para nomenclatura e ordem de código.
+* **Estilo de Código:** Segue estritamente o guia de estilo oficial do GDScript para nomenclatura e ordem de código.
 
 
-* 
-**Versionamento:** O progresso é registrado via GitHub com commits diários.
+* **Versionamento:** O progresso é registrado via GitHub com commits diários.
 
 
-* 
-**Assets:** Utilização de artes e sons gratuitos de fontes como Itch.io e Freesound.
+* **Assets:** Utilização de artes e sons gratuitos de fontes como Itch.io e Freesound.
 
 
-* 
-**Feedback Visual:** O personagem pisca por 1 segundo ao perder uma vida extra para indicar invulnerabilidade ou dano.
+* **Feedback Visual:** O personagem pisca por 1 segundo ao perder uma vida extra para indicar invulnerabilidade ou dano.
