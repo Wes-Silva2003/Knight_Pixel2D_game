@@ -121,7 +121,7 @@ func jump_state():
 			change_state(State.idle)
 			
 	# Morte por queda (buraco)
-	if position.y >= 448 or position.x < 0:
+	if position.y >= 448 or position.x < -10:
 		change_state(State.death)
 
 func hurt_state():
