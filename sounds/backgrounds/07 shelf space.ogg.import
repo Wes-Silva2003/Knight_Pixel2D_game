@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dlxl3kbrx8o1k"
+path="res://.godot/imported/07 shelf space.ogg-8412b6d5f2703443c2cd66582e46a4ae.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/backgrounds/07 shelf space.ogg"
+dest_files=["res://.godot/imported/07 shelf space.ogg-8412b6d5f2703443c2cd66582e46a4ae.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

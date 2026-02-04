@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://ddeptqfh7htig"]
+
+[ext_resource type="Script" uid="uid://bo613qvchr0dv" path="res://scripts/itemData.gd" id="1_ajiuk"]
+[ext_resource type="SpriteFrames" uid="uid://c3p463fe116es" path="res://animation/anim_gold.tres" id="1_mh0d7"]
+[ext_resource type="AudioStream" uid="uid://6f3hnb2is67w" path="res://sounds/effects Sounds/itens/coin.wav" id="3_eknr3"]
+
+[resource]
+script = ExtResource("1_ajiuk")
+value = 10
+animation_frames = ExtResource("1_mh0d7")
+sound_effect = ExtResource("3_eknr3")
+metadata/_custom_type_script = "uid://bo613qvchr0dv"

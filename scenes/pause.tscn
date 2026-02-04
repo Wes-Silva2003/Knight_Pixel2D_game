@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://cmh35reefcf74"]
+
+[ext_resource type="Script" uid="uid://j3i4s37gd3f8" path="res://scripts/pause.gd" id="1_5a6ek"]
+[ext_resource type="Theme" uid="uid://b4weu0uix6p3v" path="res://theme/theme_button.tres" id="1_l2mpd"]
+[ext_resource type="FontFile" uid="uid://cwrwokrj8keae" path="res://fonts/at01.ttf" id="2_5a6ek"]
+[ext_resource type="AudioStream" uid="uid://cagg330pbui11" path="res://sounds/effects Sounds/pop_4.wav" id="4_e0jm0"]
+
+[node name="pause" type="CanvasLayer" unique_id=1463450691]
+process_mode = 3
+script = ExtResource("1_5a6ek")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2046204855]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.043137256, 0.043137256, 0.043137256, 0.58431375)
+
+[node name="menu_holder" type="VBoxContainer" parent="." unique_id=1164833821]
+offset_left = 225.5
+offset_top = 119.25
+offset_right = 542.5
+offset_bottom = 296.75
+
+[node name="resume" type="Button" parent="menu_holder" unique_id=1553504361]
+layout_mode = 2
+theme = ExtResource("1_l2mpd")
+theme_override_fonts/font = ExtResource("2_5a6ek")
+theme_override_font_sizes/font_size = 30
+text = "Resume"
+
+[node name="restart" type="Button" parent="menu_holder" unique_id=650209106]
+layout_mode = 2
+theme = ExtResource("1_l2mpd")
+theme_override_fonts/font = ExtResource("2_5a6ek")
+theme_override_font_sizes/font_size = 30
+text = "Restart"
+
+[node name="save" type="Button" parent="menu_holder" unique_id=320852905]
+layout_mode = 2
+theme = ExtResource("1_l2mpd")
+theme_override_fonts/font = ExtResource("2_5a6ek")
+theme_override_font_sizes/font_size = 30
+text = "Save"
+
+[node name="load" type="Button" parent="menu_holder" unique_id=8572787]
+layout_mode = 2
+theme = ExtResource("1_l2mpd")
+theme_override_fonts/font = ExtResource("2_5a6ek")
+theme_override_font_sizes/font_size = 30
+text = "Load"
+
+[node name="quit" type="Button" parent="menu_holder" unique_id=1198165175]
+layout_mode = 2
+theme = ExtResource("1_l2mpd")
+theme_override_fonts/font = ExtResource("2_5a6ek")
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[node name="pop_click" type="AudioStreamPlayer" parent="." unique_id=2065617229]
+stream = ExtResource("4_e0jm0")
+volume_db = 5.0
+
+[connection signal="pressed" from="menu_holder/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="menu_holder/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="menu_holder/save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="menu_holder/load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="menu_holder/quit" to="." method="_on_quit_pressed"]

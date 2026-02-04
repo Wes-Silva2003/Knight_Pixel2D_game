@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://c3p463fe116es"]
+
+[ext_resource type="Texture2D" uid="uid://8xos2oefx1u5" path="res://sprites/lifes and coins/collectable sprite-sheet.png" id="1_wf65d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6m6ce"]
+atlas = ExtResource("1_wf65d")
+region = Rect2(0, 224, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b514v"]
+atlas = ExtResource("1_wf65d")
+region = Rect2(16, 224, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iiq78"]
+atlas = ExtResource("1_wf65d")
+region = Rect2(32, 224, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixkr5"]
+atlas = ExtResource("1_wf65d")
+region = Rect2(48, 224, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqo8r"]
+atlas = ExtResource("1_wf65d")
+region = Rect2(64, 224, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6m6ce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b514v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iiq78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixkr5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqo8r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
