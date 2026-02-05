@@ -6,9 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bqnxnkk31n3q6" path="res://sprites/knight/death.png" id="4_asocn"]
 [ext_resource type="Texture2D" uid="uid://bfth6cy3otpfx" path="res://sprites/logo_game.png" id="5_61f6c"]
 [ext_resource type="Texture2D" uid="uid://d2cydcqvps8jw" path="res://sprites/logo_over.png" id="6_xqply"]
-[ext_resource type="Theme" uid="uid://b4weu0uix6p3v" path="res://theme/theme_button.tres" id="7_i8bap"]
-[ext_resource type="Texture2D" uid="uid://bgmaw77w82hrc" path="res://sprites/buttons/load button.png" id="8_e3ik1"]
-[ext_resource type="Texture2D" uid="uid://c6dwu1q0fwr5g" path="res://sprites/buttons/exit button.png" id="9_4sv83"]
+[ext_resource type="Theme" uid="uid://d0f16oo6soin3" path="res://theme/button_black.tres" id="7_56v3a"]
 [ext_resource type="AudioStream" uid="uid://bo7mer8g58xoh" path="res://sounds/backgrounds/03 before the dawn.ogg" id="10_3817r"]
 [ext_resource type="FontFile" uid="uid://cwrwokrj8keae" path="res://fonts/at01.ttf" id="11_gs2es"]
 [ext_resource type="Texture2D" uid="uid://3lbti7705xl5" path="res://sprites/lifes and coins/coins-chests-etc-2-0-noborders.png" id="12_asocn"]
@@ -216,33 +214,29 @@ texture = ExtResource("6_xqply")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=115731371]
 layout_mode = 0
-offset_left = 44.0
-offset_top = 64.0
-offset_right = 375.0
-offset_bottom = 353.0
+offset_left = 74.0
+offset_top = 75.0
+offset_right = 316.0
+offset_bottom = 364.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_opsg7")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=604482289]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="load" type="TextureButton" parent="PanelContainer/VBoxContainer" unique_id=2045868169]
+[node name="load" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1393933273]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_vertical = 4
-theme = ExtResource("7_i8bap")
-texture_normal = ExtResource("8_e3ik1")
-ignore_texture_size = true
-stretch_mode = 5
+theme = ExtResource("7_56v3a")
+text = "LOAD"
 
-[node name="exit" type="TextureButton" parent="PanelContainer/VBoxContainer" unique_id=1073400026]
+[node name="exit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1207028490]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_vertical = 4
-theme = ExtResource("7_i8bap")
-texture_normal = ExtResource("9_4sv83")
-ignore_texture_size = true
-stretch_mode = 5
+theme = ExtResource("7_56v3a")
+text = "EXIT"
 
 [node name="Music_gameover" type="AudioStreamPlayer2D" parent="." unique_id=714488623]
 stream = ExtResource("10_3817r")

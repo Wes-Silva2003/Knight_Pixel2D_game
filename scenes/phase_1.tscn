@@ -59,11 +59,10 @@ region_rect = Rect2(0, 0, 1536, 416)
 position = Vector2(4487, 10)
 scene = "phase_2"
 
-[node name="MusicBackground" type="AudioStreamPlayer" parent="Background" unique_id=853534304]
+[node name="MusicBackground" type="AudioStreamPlayer" parent="Background" unique_id=1208456893]
 stream = ExtResource("6_6lq2c")
 volume_db = -10.0
 autoplay = true
-mix_target = 1
 
 [node name="Player" parent="." unique_id=1031414027 instance=ExtResource("4_yai6y")]
 position = Vector2(54, 253)

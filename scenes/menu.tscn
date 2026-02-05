@@ -1,14 +1,11 @@
 [gd_scene format=3 uid="uid://bktt1rr2kkij3"]
 
-[ext_resource type="Theme" uid="uid://b4weu0uix6p3v" path="res://theme/theme_button.tres" id="1_1rerr"]
 [ext_resource type="Texture2D" uid="uid://daty4qtsu8xug" path="res://sprites/tile_terrain/moon.png" id="1_6swd7"]
 [ext_resource type="Script" uid="uid://ctodhxmaaug01" path="res://scripts/menu.gd" id="1_7qvly"]
 [ext_resource type="Texture2D" uid="uid://bligkela0onk3" path="res://sprites/knight/idle.png" id="2_7qvly"]
 [ext_resource type="Texture2D" uid="uid://besxbbedc2xbw" path="res://sprites/logo.png" id="3_rfqti"]
 [ext_resource type="Texture2D" uid="uid://bfth6cy3otpfx" path="res://sprites/logo_game.png" id="4_g8i7c"]
-[ext_resource type="Texture2D" uid="uid://bvev7axx3skwc" path="res://sprites/buttons/new game button.png" id="6_23t3j"]
-[ext_resource type="Texture2D" uid="uid://uulguv4y36nx" path="res://sprites/buttons/continue button.png" id="8_5ti5v"]
-[ext_resource type="Texture2D" uid="uid://b2oxc10bwacg6" path="res://sprites/buttons/quit button.png" id="9_1by5w"]
+[ext_resource type="Theme" uid="uid://d0f16oo6soin3" path="res://theme/button_black.tres" id="6_13sgg"]
 [ext_resource type="AudioStream" uid="uid://dlxl3kbrx8o1k" path="res://sounds/backgrounds/07 shelf space.ogg" id="10_7qvly"]
 [ext_resource type="AudioStream" uid="uid://cagg330pbui11" path="res://sounds/effects Sounds/pop_4.wav" id="11_rfqti"]
 
@@ -115,42 +112,36 @@ texture = ExtResource("4_g8i7c")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=2108353732]
 layout_mode = 0
-offset_left = 44.0
-offset_top = 64.0
-offset_right = 375.0
-offset_bottom = 353.0
+offset_left = 66.0
+offset_top = 80.0
+offset_right = 338.0
+offset_bottom = 369.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_ocger")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=847081809]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="new_game" type="TextureButton" parent="PanelContainer/VBoxContainer" unique_id=1404921857]
+[node name="new_game" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1146472774]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_vertical = 4
-theme = ExtResource("1_1rerr")
-texture_normal = ExtResource("6_23t3j")
-ignore_texture_size = true
-stretch_mode = 5
+theme = ExtResource("6_13sgg")
+text = "NEW GAME"
 
-[node name="continue" type="TextureButton" parent="PanelContainer/VBoxContainer" unique_id=120479509]
+[node name="continue" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1516577517]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_vertical = 4
-theme = ExtResource("1_1rerr")
-texture_normal = ExtResource("8_5ti5v")
-ignore_texture_size = true
-stretch_mode = 5
+theme = ExtResource("6_13sgg")
+text = "CONTINUE"
 
-[node name="quit" type="TextureButton" parent="PanelContainer/VBoxContainer" unique_id=1666258978]
+[node name="quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=556083731]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_vertical = 4
-theme = ExtResource("1_1rerr")
-texture_normal = ExtResource("9_1by5w")
-ignore_texture_size = true
-stretch_mode = 5
+theme = ExtResource("6_13sgg")
+text = "QUIT"
 
 [node name="Music_menu" type="AudioStreamPlayer2D" parent="." unique_id=2007721058]
 stream = ExtResource("10_7qvly")

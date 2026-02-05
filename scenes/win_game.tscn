@@ -4,8 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://nfq36yq0pweg" path="res://sprites/tile_terrain/win_game.png" id="1_88hve"]
 [ext_resource type="Texture2D" uid="uid://cdevvn6bqx0jq" path="res://sprites/knight/win.png" id="2_8n4e5"]
 [ext_resource type="Texture2D" uid="uid://dp5pu4u0jp7i1" path="res://sprites/logo_win.png" id="3_53evs"]
-[ext_resource type="Theme" uid="uid://b4weu0uix6p3v" path="res://theme/theme_button.tres" id="4_4kscr"]
-[ext_resource type="Texture2D" uid="uid://c6dwu1q0fwr5g" path="res://sprites/buttons/exit button.png" id="6_p13nk"]
+[ext_resource type="Theme" uid="uid://d0f16oo6soin3" path="res://theme/button_black.tres" id="5_d6s7s"]
 [ext_resource type="AudioStream" uid="uid://dlxl3kbrx8o1k" path="res://sounds/backgrounds/07 shelf space.ogg" id="7_wat5c"]
 [ext_resource type="FontFile" uid="uid://cwrwokrj8keae" path="res://fonts/at01.ttf" id="8_qavss"]
 [ext_resource type="Texture2D" uid="uid://3lbti7705xl5" path="res://sprites/lifes and coins/coins-chests-etc-2-0-noborders.png" id="9_a6ca1"]
@@ -152,24 +151,22 @@ texture = ExtResource("3_53evs")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1883196310]
 layout_mode = 0
-offset_left = 42.0
+offset_left = 67.0
 offset_top = 114.0
-offset_right = 373.0
-offset_bottom = 403.0
+offset_right = 301.0
+offset_bottom = 408.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_e3ss5")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=391310300]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="exit" type="TextureButton" parent="PanelContainer/VBoxContainer" unique_id=1146130135]
+[node name="exit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=915298048]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_vertical = 4
-theme = ExtResource("4_4kscr")
-texture_normal = ExtResource("6_p13nk")
-ignore_texture_size = true
-stretch_mode = 5
+theme = ExtResource("5_d6s7s")
+text = "EXIT"
 
 [node name="Music_win" type="AudioStreamPlayer2D" parent="." unique_id=840794589]
 stream = ExtResource("7_wat5c")

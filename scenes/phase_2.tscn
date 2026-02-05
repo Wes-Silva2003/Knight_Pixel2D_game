@@ -57,7 +57,7 @@ region_rect = Rect2(0, 0, 1536, 416)
 position = Vector2(4487, 10)
 scene = "win_game"
 
-[node name="MusicBackground" type="AudioStreamPlayer" parent="Background" unique_id=1164800680]
+[node name="MusicBackground" type="AudioStreamPlayer" parent="Background" unique_id=185910592]
 stream = ExtResource("5_5bxjt")
 volume_db = -15.0
 autoplay = true
