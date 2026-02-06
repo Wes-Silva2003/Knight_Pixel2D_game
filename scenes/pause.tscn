@@ -9,7 +9,6 @@
 [node name="pause" type="CanvasLayer" unique_id=1463450691]
 process_mode = 3
 script = ExtResource("1_5a6ek")
-metadata/_edit_horizontal_guides_ = [273.0, 298.0]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2046204855]
 anchors_preset = 15

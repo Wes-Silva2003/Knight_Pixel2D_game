@@ -105,7 +105,11 @@ func walk_state():
 		animation.flip_h = direction < 0
 	else:
 		change_state(State.idle)
-	
+
+	# Morte por queda (buraco)
+	if position.y >= 448 or position.x < -10:
+		change_state(State.death)
+
 func jump_state():
 	var direction = Input.get_axis("left", "right")
 	if direction:
