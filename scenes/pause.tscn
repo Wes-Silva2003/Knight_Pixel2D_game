@@ -19,6 +19,7 @@ grow_vertical = 2
 color = Color(0.043137256, 0.043137256, 0.043137256, 0.58431375)
 
 [node name="menu_holder" type="VBoxContainer" parent="." unique_id=1164833821]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -72,60 +73,62 @@ text = "Quit"
 stream = ExtResource("4_e0jm0")
 volume_db = 5.0
 
-[node name="warning_screen" type="Control" parent="." unique_id=1997735622]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="warning_screen" type="MarginContainer" parent="." unique_id=1904773968]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="warning_screen" unique_id=810754679]
-position = Vector2(201, 112)
-scale = Vector2(0.60661155, 0.49757278)
+[node name="Sprite2D" type="TextureRect" parent="warning_screen" unique_id=1464140682]
+custom_minimum_size = Vector2(448, 256)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 texture = ExtResource("5_jn4bt")
-centered = false
+expand_mode = 1
 
-[node name="warning" type="Control" parent="warning_screen" unique_id=1855020392]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="VBoxContainer" type="VBoxContainer" parent="warning_screen" unique_id=1627328503]
+custom_minimum_size = Vector2(420, 225)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
-[node name="title" type="Label" parent="warning_screen/warning" unique_id=987199811]
-layout_mode = 0
-offset_left = 325.0
-offset_top = 126.0
-offset_right = 482.0
-offset_bottom = 149.0
+[node name="title" type="Label" parent="warning_screen/VBoxContainer" unique_id=987199811]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
 theme_override_fonts/font = ExtResource("2_5a6ek")
 theme_override_font_sizes/font_size = 25
 text = "title"
+horizontal_alignment = 1
 
-[node name="message" type="Label" parent="warning_screen/warning" unique_id=1295601249]
-layout_mode = 0
-offset_left = 254.0
-offset_top = 172.0
-offset_right = 517.0
-offset_bottom = 253.0
+[node name="message" type="Label" parent="warning_screen/VBoxContainer" unique_id=1295601249]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("2_5a6ek")
 theme_override_font_sizes/font_size = 17
 text = "message"
+horizontal_alignment = 1
 
-[node name="ok" type="Button" parent="warning_screen/warning" unique_id=1650081770]
-layout_mode = 0
-offset_left = 412.0
-offset_top = 273.0
-offset_right = 490.0
-offset_bottom = 298.0
+[node name="HBoxContainer" type="HBoxContainer" parent="warning_screen/VBoxContainer" unique_id=1789651759]
+layout_mode = 2
+
+[node name="ok" type="Button" parent="warning_screen/VBoxContainer/HBoxContainer" unique_id=1650081770]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
 theme = ExtResource("2_r1fnm")
 theme_override_font_sizes/font_size = 26
 text = "Ok"
 
-[node name="cancel" type="Button" parent="warning_screen/warning" unique_id=487249448]
-layout_mode = 0
-offset_left = 277.0
-offset_top = 273.0
-offset_right = 351.0
-offset_bottom = 298.0
+[node name="cancel" type="Button" parent="warning_screen/VBoxContainer/HBoxContainer" unique_id=487249448]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
 theme = ExtResource("2_r1fnm")
 theme_override_font_sizes/font_size = 26
 text = "Cancel"

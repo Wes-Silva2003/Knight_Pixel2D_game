@@ -9,10 +9,10 @@ var pending_action: String = ""
 @onready var loading: Button = $menu_holder/load
 @onready var quit: Button = $menu_holder/quit
 @onready var warning_screen: Control = $warning_screen
-@onready var title: Label = $warning_screen/warning/title
-@onready var message: Label = $warning_screen/warning/message
-@onready var ok_btn: Button = $warning_screen/warning/ok
-@onready var cancel_btn: Button = $warning_screen/warning/cancel
+@onready var title: Label = %title
+@onready var message: Label = %message
+@onready var ok_btn: Button = %ok
+@onready var cancel_btn: Button = %cancel
 @onready var pop_click: AudioStreamPlayer = $pop_click
 
 func _ready() -> void:
