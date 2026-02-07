@@ -17,4 +17,4 @@ func _on_load_pressed() -> void:
 #volta para a tela menu inicial
 func _on_exit_pressed() -> void:
 	pop_click.play()
-	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")

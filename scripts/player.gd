@@ -153,7 +153,7 @@ func _on_timer_damage_timeout() -> void:
 	enable_hitbox()
 
 func _on_timer_death_timeout() -> void:
-	get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
+	get_tree().change_scene_to_file("res://scenes/game_over.tscn")
 
 func _on_hit_box_area_entered(area: Area2D) -> void:
 	if velocity.y > 0:

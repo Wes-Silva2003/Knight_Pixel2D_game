@@ -12,9 +12,9 @@ func _on_body_entered(_body: Node2D) -> void:
 
 #quando o cromometro chegar ao fim chama a função para trocar de cena
 func _on_timer_next_phase_timeout() -> void:
-	call_deferred("charge_scene")
+	call_deferred("change_scene")
 
 #carrega e nova cena
-func charge_scene():
-	var path_scene = "res://Scenes/" + scene + ".tscn"
+func change_scene():
+	var path_scene = "res://scenes/" + scene + ".tscn"
 	GameManager.save_game_scene(path_scene)

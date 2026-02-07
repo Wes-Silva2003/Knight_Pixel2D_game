@@ -1,6 +1,6 @@
 extends Control
 
-const phase_1 = "res://Scenes/phase_1.tscn"
+const phase_1 = "res://scenes/phase_1.tscn"
 
 @onready var pop_click: AudioStreamPlayer = $pop_click
 @onready var menu_buttons_container: VBoxContainer = $PanelContainer/VBoxContainer 
